@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>D7 : This is Day 8 : Git</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../../css_Global/myStyle.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+
+		<style>
+			body {
+				background-color: gray;
+				color: white;
+			}
+			.section {
+				background-color: rgb(50, 50, 60);
+				/* color: black;  */
+				border: 3px solid rgb(0, 0, 0);
+				border-radius: 10px;
+				margin-left: 50px;
+				margin-right: 50px;
+				margin-top: 10px;
+				/* padding-left: 30px; */
+				padding: 30px;
+				/* text-align: center; */
+			}
+
+			body,
+			h1 {
+				font-family: 'Roboto', sans-serif;
+			}
+
+			.sec1 {
+				background-color: rgb(40, 40, 50);
+				padding: 10px;
+				padding-left: 20px;
+				/* white-space: pre-line; */
+			}
+
+			#CSS_Test1 .test-bd-1 {
+				color: rgb(0, 255, 200);
+				font-size: 2em;
+			}
+
+			#CSS_Test1 h1 {
+				color: yellow;
+				font-size: 60px;
+				font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+			}
+
+			.hidden {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="section" id="playgound">
+			<h1>Day-8 : Git & Version Control</h1>
+			<hr />
+			<h3>Arjan-Frame</h3>
+
+			<table class="mytb">
+				<tr>
+					<td>
+						<img
+							src="https://wallpapercave.com/wp/wp7292276.jpg"
+							alt="This is an image"
+							width="100%"
+							width="580"
+						/>
+					</td>
+					<td>
+						<img
+							src="https://wallpapercave.com/wp/wp7292161.png"
+							alt="This is an image"
+							width="600"
+							width=""
+						/>
+					</td>
+				</tr>
+			</table>
+
+			<section class="section-subH2" id="">
+				<h1 class="section-sub-head2">Let's Chill ! !</h1>
+				<div class="my-ribbon" data-label="😍"></div>
+				<div class="sectoin-subH2-container" id="CSS_Test3">
+					<br />
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/bySCouUP8AI?si=_LGXO_zP3yN0cnIq"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					></iframe>
+				</div>
+			</section>
+
+			<!-- ------------------------------------------------ -->
+			<section class="section-subH2" id="">
+				<h1 class="section-sub-head2">InnerHTML Tob Tuarn</h1>
+				<div class="my-ribbon" data-label="#0"></div>
+				<div class="sectoin-subH2-container">
+					<ul>
+						<li id="testChange1">try to change me !!!</li>
+						<li id="dom">
+							<strong style="color: aqua">dom manipulation</strong> : try to search it
+						</li>
+						<li id="">
+							search <strong style="color: aqua">innerHTML</strong> and
+							<strong style="color: aqua">innerText</strong> some can add Tag by use .add
+						</li>
+					</ul>
+					<button id="btn_1" class="btn2" onclick="changeColor()">Click me</button>
+					<button id="btn_2" class="btn2" onclick="toggleDisplay()">hide</button>
+					<hr />
+					<ul>
+						<li id="testAdd1">try to add me !!!</li>
+					</ul>
+					<input type="text" name="" id="tbx_1" />
+					<button id="btn_submit" class="btn2" style="padding: 3px 10px">submit</button>
+					<< This button not have event 'onClick' in the HTML !!! but it on the javascript
+					<br />
+					But I'm prefer to use the HTML onClick function
+					<div id="result"></div>
+					<hr />
+					<ul>
+						<li id="testAdd2">try to add me more than 1 !!!</li>
+					</ul>
+					<input type="text" name="" id="tbx_2" />
+					<button id="btn_submit2" class="btn2" style="padding: 3px 10px" onclick="addContent2()">
+						submit
+					</button>
+					<button
+						id="btn_submit3"
+						class="btn2"
+						style="padding: 3px 10px"
+						onclick="removeContent2()"
+					>
+						remove
+					</button>
+					<div id="result2"></div>
+				</div>
+			</section>
+
+			<section class="section-subH2" id="">
+				<h1 class="section-sub-head2">API</h1>
+				<div class="my-ribbon" data-label="#1"></div>
+				<div class="sectoin-subH2-container">
+					<table class="mytb">
+						<tr>
+							<td>[x] Try to use the (paid) <a class="btn2" style="padding: 3px 10px" href="https://rapidapi.com/" target="_blank"
+								>rapidapi</a></td>
+						</tr>
+						<tr>
+							<td>Try to use the (free) <a class="btn2" style="padding: 3px 10px" href="https://jsonplaceholder.typicode.com/" target="_blank"
+								>jsonplaceholder</a></td>
+						</tr>
+					</table>
+					<h3>Key word to search</h3>
+					<ul>
+						<li>API End Point ...(it is the link to call the API)</li>
+						<li>Promise ... async await ... fetch->then->then </li>
+					</ul>
+					<hr>
+					<h3>Example fetch and show data</h3>
+					<div id="titleList"></div>
+
+				</div>
+			</section>
+
+			<section class="section-subH2" id="">
+				<h1 class="section-sub-head2">Git & version control</h1>
+				<div class="my-ribbon" data-label="#1"></div>
+				<div class="sectoin-subH2-container">
+					<table class="mytb">
+						<tr>
+							<td></td>
+							<td>
+								<div class="my-bd2 wid200"></div>
+							</td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+
+			</section>
+			<!-- ------------------------------------------------ -->
+			<section class="section-subH2" id="">
+				<h1 class="section-sub-head2">This is for template</h1>
+				<div class="my-ribbon" data-label="#xx"></div>
+				<div class="sectoin-subH2-container">
+					<table class="mytb">
+						<tr>
+							<td></td>
+							<td>
+								<div class="my-bd2 wid200"></div>
+							</td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<!-- ------------------------------------------------ -->
+		</section>
+
+		<!-- ------------------------------------------------- -->
+		<script src="./script.js"></script>
+	</body>
+</html>
